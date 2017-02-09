@@ -9,7 +9,7 @@ public class BonusChallenge {
 	public void dynamicLoading() throws InterruptedException
 	{
 		//Test below first checks that loading element is shown after clicking start
-		//isDisplayed() is used to validate that Helloworld message is displayed
+		///isDisplayed() is used to validate that Helloworld message is displayed
 		WebDriver driver = new FirefoxDriver();
 		driver.get("http://the-internet.herokuapp.com/dynamic_loading/1");
 		System.out.println("Before click:"+driver.findElements(By.xpath(".//*[@id='loading']/img")).size());
